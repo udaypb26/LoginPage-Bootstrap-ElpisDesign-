@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<!--Designed By P.B.UDAY-->
+	<title>ElpisDesing Task</title>
+
+	 <link rel="stylesheet" href="css/bootstrap.css"  type="text/css" />
+	 <link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css" />
+	 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="css/bootstrap-social.css"  type="text/css" />
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"   />
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+<style type="text/css">
+/* To set a gradient grey background for the page*/
+html {  
+	background: #aebcbf; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #aebcbf 0%, #0a0809 100%); 
+	background: -webkit-radial-gradient(center, ellipse cover, #aebcbf 0%,#0a0809 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #aebcbf 0%,#0a0809 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=1 );
+
+	background-attachment: fixed;			/* Important for body*/
+}
+
+
+
+/* For the center div which holds the login form and Sign up form*/	
+#main2{
+        width: 50%;
+    	height: 60%;
+    	background-color: white;
+    	position: absolute;
+    	top:0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	margin: auto;
+
+
+    	border-radius: 15px;
+    	padding-left:60px;
+    	padding-top: 30px
+	 	}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+	 	
+</style>
+
+<!--To check Screen Width: For smaller screens a different page is redirected to-->
+<script>
+	$(document).ready(function(){
+  			if($(window).width() <= 950) {
+			window.location = "index_mobile.html";
+								}
+			});
+</script>
+</head>
+
+
+<body>
+
+
+<!--Main content's Card-->
+
+<div id="main2">
+	<table class="" style="width: 100%;">
+		
+		<tr>
+			<th>
+			 <h3>Login to your Account</h3>
+			</th>
+			<th></th>
+			<th style="padding-left: 20px">
+				<span style="color: #3CD2EE">Don't have an account? Sign Up</span>
+			</th>
+		</tr>
+
+
+		<tr>
+		<td style="padding-top: 20px;border-right: 1px solid">
+			<form class="form-inline" role="form" id="login_form">
+  				<div class="form-group has-success has-feedback">
+    				<label class="control-label" for="inputSuccess4"></label>
+    				<input type="text" class="form-control" id="inputSuccess4" placeholder="username">
+    				<span class="glyphicon glyphicon-user form-control-feedback"></span>
+  				</div><br>
+  				<br>
+			</form>
+		</td>
+
+		<td> </td>
+
+  		<td style="padding-left: 20px"> 
+  				<!--Facebook OAuth Button-->
+  				<div style="width: 80%">
+  				<a class="btn-lg btn-block btn-social btn-facebook" >
+    			<span class="fa fa-facebook"></span> Sign In with facebook
+  				</a>
+  				</div>
+  		</td>
+		</tr>
+
+		<tr>
+		<td>
+			<form class="form-inline" role="form" id="login_form">
+				<div class="form-group has-success has-feedback" style="padding-top: 30px">
+    				<label class="control-label" for="inputSuccess4"></label>
+    				<input type="text" class="form-control" id="inputSuccess4" placeholder="password">
+    				<span class="glyphicon glyphicon-pencil form-control-feedback" style="padding-top: 30px"></span>
+  				</div>
+  			</form>
+  		</td>
+
+  		<td>or</td>
+
+  		<td style="padding-left: 20px">
+  					<!--Twitter OAuth Button-->
+  					<div style="width: 80%">
+  					<a class="btn-lg btn-block btn-social btn-twitter" >
+    					<span class="fa fa-twitter"></span> Sign In with Twitter
+  					</a>
+  					</div>
+  		</td>
+		</tr>
+
+
+		<tr>
+		<td style="border-right: 1px solid">
+			<div style="padding-top: 40px">
+  				<button type="button" class="btn btn-default btn-md" style="background-color: #44d43b;width:65%">
+  					<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:white"></span> <span style="color: white"> Sign In</span>
+				</button>
+				</div>
+		</td>
+
+		<td></td>
+
+		<td style="padding-left: 20px">
+			<div style="width: 80%">
+  				<a class="btn-lg btn-block btn-social btn-google" >
+    				<span class="fa fa-google"></span> Sign In with Google
+  				</a>
+  			</div>
+  		</td>
+		</tr>
+
+
+		<tr>
+		<td>
+			<div style="padding-top: 30px">
+					<label class="checkbox-inline"><input type="checkbox" value="">Remember Me</label>
+					<a href="#" style="padding-left: 30px">Forgot Password?</a>
+				</div>
+		</td>
+		</tr>
+
+	</table>
+</div>
+
+</body>
+</html>
